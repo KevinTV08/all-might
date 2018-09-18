@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" type="text/css" href="queries.css"> -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <!-- <link rel="stylesheet" type="text/css" href="shared.css"> -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/contact.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
+        rel='stylesheet' type='text/css'>
+    <title>Contact Us</title>
+</head>
+
+</html>
+
+<body>
+    <header class="main-header">
+        <div class="toggle-container">
+            <div class>
+                <img class="lion-mobile" src="images/lion-light.png" alt="lion">
+            </div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+
+        </div>
+        <nav>
+            <div>
+                <h1>
+                    <img class="lion" src="images/lion-light.png" alt="lion">
+                </h1>
+                <h1>
+                    <img class="lion-dark" src="images/lion-light.png" alt="lion-light">
+                </h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#shop" class="dropbtn">Shop</a>
+                    <div class="dropdown-content">
+                        <a href="products.html">Products</a>
+                        <a href="shipping.html">Shipping</a>
+                        <a href="returns.html">Returns</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div id="icon--holder">
+                <a class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="about.html">About Us</a>
+            </li>
+            <li class="mobile-nav__item shop-btn">
+                <a href="#shop">Shop</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="shipping.html">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="returns.html">Returns</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="contact-page">
+
+        <h1 class="contact-title">We Love to Hear From you:</h1>
+        <form action="index.html" class="contact-form">
+            <label for="title">Title</label>
+            <select id="title">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" required>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" required>
+            <label for="dwfrm_contactus_comment"><span>Comment</span></label>
+            <div class="field-wrapper">
+                <textarea class="input-textarea comment" id="dwfrm_contactus_comment" name="dwfrm_contactus_comment"
+                    rows="8" cols="40" minlength="0" maxlength="2000"></textarea>
+                <div class="submit-btn">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        <div class="row">
+            <div>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ion-social-googleplus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ion-social-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright &copy; 2018
+                <a href="#" class="home">All Might</a>. All rights reserved.
+            </p>
+            <p>Developed by Kevin Tran
+            </p>
+        </div>
+
+        <div class="row">
+            <div>
+                <ul class="payment-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-amex"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-apple-pay"></i>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-diners-club"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-discover"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-jcb"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="main.js"></script>
+</body>
