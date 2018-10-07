@@ -1,3 +1,5 @@
+/* Base */
+
 *,
 *::after,
 *::before {
@@ -19,6 +21,8 @@ body {
 
   text-rendering: optimizeLegibility;
 }
+
+/* Typography */
 
 h1,
 h2 {
@@ -54,6 +58,8 @@ h4 {
   font-size: 0.875rem;
   font-weight: 400;
 }
+
+/* Overlay Images */
 
 .collection-title {
   text-align: center;
@@ -142,37 +148,7 @@ h4 {
   height: auto;
 }
 
-/* sticky */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #000;
-  z-index: 9999;
-}
-
-.sticky nav {
-  /* background: #000; */
-  margin-top: 1px;
-}
-
-.sticky nav ul li a:link,
-.sticky nav ul li a:visited {
-  padding: 8px 0; /* to increase the space between orange line and the text */
-  color: #fff;
-}
-
-/* .sticky .lion {
-  display: none; 
- } */
-
-/* .sticky .lion-dark {
-  display: block; 
-}  */
-
-/* HEADER */
+/* Header */
 
 #product-overview {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -227,6 +203,8 @@ nav div:first-child img {
   /* position: fixed;
   z-index: 1000; */
 }
+
+/* Mobile Navigation */
 
 .toggle-container {
   display: flex;
@@ -314,7 +292,12 @@ nav li.dropdown {
   display: none;
 }
 
-/* BUTTON */
+/* Cursor */
+.txt-type .txt {
+  border-right: 0.2rem solid #fff;
+}
+
+/* Button */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -344,24 +327,16 @@ nav li.dropdown {
   color: #000;
 }
 
-/* COLLAGE */
+/* Collage */
 .collection-index-img img {
   height: 28.125rem;
   width: 100%;
   object-fit: cover;
 }
 
-/* FOOTER */
+/* Footer */
 
 footer {
-  /* background-color: #000;
-  padding: 3.125rem 3.125rem 0.625rem 3.125rem;
-  font-size: 80%;
-  overflow: hidden;
-
-  width: 100%;
-  position: static; 
-  bottom: 0; */
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -454,8 +429,9 @@ footer p a:active {
   color: #888;
 }
 
-/****** SLIDESHOW ******/
-.slideshow-container {
+/* Slideshow Section */
+
+#slider-container {
   max-width: 100%;
   height: 475px;
   position: relative;
@@ -463,72 +439,95 @@ footer p a:active {
   padding: 2.5rem 0 5rem 0;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
+
+.slide {
+  max-width: 100%;
+  height: 475px;
+}
+
+.slide img {
+  max-width: 100%;
+  height: 475px;
+}
+
+.slide {
+  position: absolute;
+}
+
+/* set style for each arrow */
+.slider-arrow {
+  color: #fff;
+  font-size: slide;
   cursor: pointer;
+}
+
+#arrows-wrapper {
+  position: relative;
+  bottom: -200px;
+}
+
+#arrow-prev {
   position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 1rem;
-  margin-top: -0.625rem;
-  color: white;
-  font-weight: bold;
-  font-size: 1.125rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  left: 20px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-weight: 400;
-  font-size: 2rem;
-  padding: 8px 0.75rem;
+#arrow-next {
   position: absolute;
-  bottom: 200.5px; /* originally 237.5px */
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.1);
+  right: 20px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 0.75rem;
-  padding: 8px 0.75rem;
+/* classes to keep dots centered */
+
+.center_y {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center_x {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dots-wrapper {
+  display: flex;
   position: absolute;
-  top: 0.9375rem;
+  bottom: -30px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+/* style for dots */
+.dot-navigation {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
   cursor: pointer;
-  height: 0.9375rem;
-  width: 0.9375rem;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  margin: 0 8px;
+  border: 2px solid #d6d6d6;
+  transition: 0.5s background-color;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
+.dot-navigation:hover {
+  background-color: #d6d6d6;
+}
+
+.active-dot {
+  background-color: #d6d6d6;
+}
+
+/* fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Collage */
@@ -555,42 +554,9 @@ footer p a:active {
   clear: both;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 0.6875rem;
-  }
-}
-
 @media screen and (min-width: 49rem) {
+  /* Header Section  */
+
   #icon--holder {
     list-style: none;
     margin-left: auto;
@@ -628,6 +594,8 @@ footer p a:active {
     position: fixed;
     z-index: 1000;
   }
+
+  /* Main Navigation */
 
   nav {
     display: flex;
@@ -701,6 +669,8 @@ footer p a:active {
     text-align: center;
   }
 
+  /* Logo */
+
   nav div:first-child h1 {
     padding: 0;
     margin: 0 1rem;
@@ -746,7 +716,7 @@ footer p a:active {
     text-align: center !important;
   }
 
-  /* FOOTER */
+  /* Footer Section*/
 
   footer {
     font-size: 1rem;
