@@ -2,9 +2,9 @@
 
 ![screenshot](images/screenshot.png)
 
-A e-commerce website mockup for madeup clothing brand
+An e-commerce website mockup for madeup clothing brand.
 
-## Built With:
+## Built With
 
 - HTML5
 - Responsive Grid System
