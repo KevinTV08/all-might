@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -295,16 +293,6 @@ nav li.dropdown {
   height: 25vh;
 }
 
-/* 
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-}
-.row:after {
-  clear: both;
-} */
-
 /* HEADER */
 
 .clearfix {
@@ -337,13 +325,6 @@ nav div:first-child img {
   width: auto;
   text-align: left;
 }
-
-/*NAV*/
-/* nav:after {
-  content: ' ';
-  clear: both;
-  display: block;
-} */
 
 /* BUTTON */
 .btn:link,
@@ -476,10 +457,6 @@ footer p a:active {
   color: #888;
 }
 
-/* SECTION PRODUCTS */
-.section-products {
-  margin-top: 0.625rem;
-}
 
 @media screen and (min-width: 49rem) {
   #icon--holder {

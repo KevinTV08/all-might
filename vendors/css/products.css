@@ -2,7 +2,6 @@
 *,
 *::after,
 *::before {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -14,6 +13,7 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
   background-color: #fff;
   color: #292929;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -200,8 +200,15 @@ nav li.dropdown {
 
 /* section-products */
 .section-products {
-  margin-top: 0.625rem;
-  padding: 0.75rem;
+  display: block;
+  position: relative;
+  padding: 1rem;
+}
+
+.section-products {
+  display: block;
+  width: 100%;
+  padding: 2rem;
 }
 
 .box img {
@@ -224,12 +231,13 @@ nav li.dropdown {
 footer {
   background-color: #000;
   padding: 2.5rem 1.25rem 3.75rem;
+  height: 19.5rem;
   width: 100%;
-  position: fixed;
+  position: relative;
+  bottom: 0px;
   font-size: 0.875rem;
   overflow: hidden;
-  bottom: 0;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .social-links {
